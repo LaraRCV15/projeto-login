@@ -1,10 +1,51 @@
 @charset "UTF-8";
 
-/* paleta de cores
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 
-Preto: #011F26
-Amarelo: #F2A516
-Laranja: #F27405
-Laranja escuro: #BF3604
-Vermelho vinho: #731702
-*/
+body, html {
+    background-color: #011F26;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, #011F26, #8D8D8D, #011F26);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.823);
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #011F26 url(../imagens/pexels-dinnow-86001860-9444476.jpg) no-repeat;
+    height: 200px;
+    background-position: left bottom;
+    background-size: cover;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
